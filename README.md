@@ -6,6 +6,7 @@ Bayesian inference is a method of statistical inference in which Bayes' theorem 
 * Each Face in the data file spans 70 rows and 60 cols. For every face, we create a vector of
 size 70*60 that stores 1 for a ’#’ encountered and a 0 for a ’ ’ encountered. We store this
 vector in a new file.
+NOTE: All the filenames starting with 'm' are modified files.
 *  A new line is added once we have read 70 rows from the original file. This way, a single row
 in the modified file contains the data regarding one face.
 * The same is done even for the test file.
