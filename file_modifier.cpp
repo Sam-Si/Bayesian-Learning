@@ -2,6 +2,7 @@
 using namespace std;
 
 // Just a small tool to manipulate files :)
+// This code converts a face into a list of vector containing 0's and 1's
 
 int main(){
 	freopen("mfacedatatest.txt","w",stdout);
