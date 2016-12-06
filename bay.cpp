@@ -10,9 +10,6 @@ using namespace std;
 #define testROWS 150
 #define testCOLS 4200
 
-// To remove blank lines at the end of a face
-#define blank 0
-#define adjust 1
 
 /*
 
@@ -73,9 +70,9 @@ int main(){
 	fclose(stdin);
 
 	// To store the corresponding numerator of prob
-	vector<prob> store_prob(trainCOLS-blank);
+	vector<prob> store_prob(trainCOLS);
 
-	for(int j = 0 + adjust;j < trainCOLS-blank;j++){
+	for(int j = 0 ;j < trainCOLS; j++){
 		for(int i = 0;i < trainROWS;i++){
 			if(input_train[i][j] == 0 && result_train[i] == 0){
 				store_prob[j].p00++;
@@ -126,7 +123,7 @@ int main(){
 		
 		double prod_pn = log((double)total_neg);
 
-		for(int j = 0 + adjust;j < testCOLS - blank;j++){
+		for(int j = 0 ;j < testCOLS; j++){
 			// Positive Hypothesis
 			if(input_test[i][j] == 0){
 				prod_pp += (log((double)(max(store_prob[j].p01,1))))-(log((double)total_pos));
