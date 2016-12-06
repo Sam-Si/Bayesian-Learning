@@ -1,6 +1,25 @@
 <img src="https://raw.githubusercontent.com/matiassingers/awesome-readme/master/icon.png" align="right" />
 # Bayesian-Learning
+
 Bayesian inference is a method of statistical inference in which Bayes' theorem is used to update the probability for a hypothesis as more evidence or information becomes available. Bayesian inference is an important technique in statistics, and especially in mathematical statistics.
+
+## TASK
+
+The task is classifying windows cropped from images as containing a face or not. This is a
+basic step in face detection, where a window is scanned over the image, and for each window
+location, the classifier has to answer the question of whether a face is present (binary
+classification).
+
+The data file is provided to you and it contains training & test patches and binary labels,
+where 0 corresponds to 'non-face' and 1 corresponds to 'face'. The patches themselves are
+higher-resolution than the digit images, and each pixel value is either '#', corresponding to an
+edge being found at that location, or ' ', corresponding to a non-edge pixel.
+
+* You have to train a Naive Bayes classifier that distinguish faces from non-faces. In
+your report, describe the accuracy, any interesting experimental settings (smoothing
+constant, etc.) and give the confusion matrix for this task, which should have four
+entries. Also show a few interesting examples of false positives (non-faces classified
+as faces) and false negatives (faces classified as non-faces).
 
 ## Pre-processing Data
 
